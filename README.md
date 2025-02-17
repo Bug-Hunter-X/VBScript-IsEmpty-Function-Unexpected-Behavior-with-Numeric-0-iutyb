@@ -1,0 +1,3 @@
+This repository demonstrates a subtle bug in VBScript related to the `IsEmpty` function's behavior with numeric values.  The `IsEmpty` function is intended to check if a variable is uninitialized, however it does not correctly identify a numeric value of 0 as empty. This can cause unexpected results in functions that rely on `IsEmpty` to provide default values.
+
+The `bug.vbs` file contains the buggy code, and the `bugSolution.vbs` file shows a corrected version using a more robust approach for handling missing or empty arguments.
